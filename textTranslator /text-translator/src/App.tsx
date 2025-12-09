@@ -69,7 +69,7 @@ function App() {
                       value = {language}
                       onChange = {(e) => setLanguage(e.target.value)}
                     >
-                      <option value = "">Select</option> 
+                      
                       {languageOptions.map((lang)=>(
                         <option key ={lang.code} value ={lang.code}>{lang.name}</option>
                       ))}
@@ -77,7 +77,7 @@ function App() {
                     <InputBox
                       text = {convertedText}
                       placeholder = "Converted Text"
-
+                      
                     >
                     </InputBox>
                   </div>
